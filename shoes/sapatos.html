@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en-pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlekexStyle</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script type="module" src=" https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js "> </script>
+  <script nomodule src=" https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js "> </script>
+  <link rel="shortcut icon" href="../img/logoflekex.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <nav class=" relative bg-white  shadow-xl md:flex md:items-center md:justify-between z-50 ">
+
+    <div class="flex justify-between items-center">
+      <a href="/index.html"><img class="w-24 cursor-pointer z-50" src="/img/logoflekex.png" alt="logoflekex"></a>
+      <span class="text-3xl cursor-pointer mx-2 md:hidden block ">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+    </div>
+    <!---Tela Medio MENU-->
+    <ul
+      class=" md:flex md:items-center z-30 md:z-auto md:static absolute bg-white w-full md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+      id="menu-mobile">
+      <a href="/index.html">
+        <li class="mx-4 my-6 md:my-0 hover:text-sky-600 transition duration-300 ">Inicio
+        </li>
+      </a>
+      <a href="./sapatos.html">
+        <li class="mx-4 my-6  md:my-0 hover:text-sky-600  transition duration-300 ">Sapatos</li>
+      </a>
+      <a href="./roupas.html">
+        <li class="mx-4 my-6 md:my-0 hover:text-sky-600 transition duration-300">Roupas</li>
+      </a>
+     
+    </ul>
+  </nav>
+
+
+
+
+
+  <div class="bg-white">
+    <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+      <h2 class="sr-only">Products</h2>
+
+      <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+        <!-- Contentor da Imagem quadrado com limites específicos para PC -->
+        <a href="#"
+          class="group flex flex-col items-center justify-center p-4 bg-white rounded-xl shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-md max-w-sm mx-auto w-full">
+          <div
+            class="w-full aspect-square max-h-[280px] lg:max-h-[320px] flex items-center justify-center p-8 bg-gray-50 rounded-lg overflow-hidden">
+            <img src="/img/dior.png" alt="asics"
+              class="max-w-full max-h-full object-contain transition-transform duration-500 ease-out group-hover:scale-105" />
+          </div>
+
+          <div class="w-full text-center mt-4 px-2">
+            <h3
+              class="mt-4 text-sm text-gray-700">
+             Dior
+            </h3>
+            <p class="mt-1 text-base font-semibold text-gray-900">$35</p>
+                   
+                   
+            <button class="bg-[#C5A084] text-[#FAF6F0] font-sans text-xs font-bold tracking-[0.2em] uppercase px-8 py-4 rounded-none hover:bg-[#3A3330] hover:text-[#FAF6F0] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                    Comprar Agora</button>
+            
+          </div>
+        </a>
+        <!-- Contentor da Imagem quadrado com limites específicos para PC -->
+       <a href="#"
+          class="group flex flex-col items-center justify-center p-4 bg-white rounded-xl shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-md max-w-sm mx-auto w-full">
+          <div
+            class="w-full aspect-square max-h-[280px] lg:max-h-[320px] flex items-center justify-center p-8 bg-gray-50 rounded-lg overflow-hidden">
+            <img src="/img/Dunk.png" alt="asics"
+              class="max-w-full max-h-full object-contain transition-transform duration-500 ease-out group-hover:scale-105" />
+          </div>
+
+          <div class="w-full text-center mt-4 px-2">
+            <h3
+              class="mt-4 text-sm text-gray-700">
+              Nike Dunk Low 
+            </h3>
+            <p class="mt-1 text-base font-semibold text-gray-900">$35</p>
+
+            <button class="bg-[#C5A084] text-[#FAF6F0] font-sans text-xs font-bold tracking-[0.2em] uppercase px-8 py-4 rounded-none hover:bg-[#3A3330] hover:text-[#FAF6F0] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                    Comprar Agora</button>
+          </div>
+        </a>
+
+       <!-- Contentor da Imagem quadrado com limites específicos para PC -->
+
+         <a href="#"
+          class="group flex flex-col items-center justify-center p-4 bg-white rounded-xl shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-md max-w-sm mx-auto w-full">
+          
+          <div
+            class="w-full aspect-square max-h-[280px] lg:max-h-[320px] flex items-center justify-center p-8 bg-gray-50 rounded-lg overflow-hidden">
+            <img src="/img/timberland.png" alt="asics"
+              class="max-w-full max-h-full object-contain transition-transform duration-500 ease-out group-hover:scale-105" />
+          </div>
+
+          <div class="w-full text-center mt-4 px-2">
+            <h3
+              class="mt-4 text-sm text-gray-700">
+              Timberland
+            </h3>
+            <p class="mt-1 text-base font-semibold text-gray-900">$35</p>
+
+            <button class="bg-[#C5A084] text-[#FAF6F0] font-sans text-xs font-bold tracking-[0.2em] uppercase px-8 py-4 rounded-none hover:bg-[#3A3330] hover:text-[#FAF6F0] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                    Comprar Agora</button>
+          </div>
+        </a>
+
+
+
+        <!-- Grid de exemplo para o PC (3 colunas em ecrãs médios, 4 colunas em ecrãs grandes) -->
+
+
+        <a href="#"
+          class="group flex flex-col items-center justify-center p-4 bg-white rounded-xl shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-md max-w-sm mx-auto w-full">
+          <div
+            class="w-full aspect-square max-h-[280px] lg:max-h-[320px] flex items-center justify-center p-8 bg-gray-50 rounded-lg overflow-hidden">
+            <img src="/img/rosa1.png" alt="asics"
+              class="max-w-full max-h-full object-contain transition-transform duration-500 ease-out group-hover:scale-105" />
+          </div>
+
+          <div class="w-full text-center mt-4 px-2">
+            <h3
+              class="mt-4 text-sm text-gray-700">
+                Pharrell x Adidas Jellyfish
+              
+            </h3>
+            <p class="mt-1 text-base font-semibold text-gray-900">$35</p>
+
+            <button class="bg-[#C5A084] text-[#FAF6F0] font-sans text-xs font-bold tracking-[0.2em] uppercase px-8 py-4 rounded-none hover:bg-[#3A3330] hover:text-[#FAF6F0] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                    Comprar Agora</button>
+          </div>
+        </a>
+
+
+
+
+
+
+        <a href="#"
+          class="group flex flex-col items-center justify-center p-4 bg-white rounded-xl shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-md max-w-sm mx-auto w-full">
+          <div
+            class="w-full aspect-square max-h-[280px] lg:max-h-[320px] flex items-center justify-center p-8 bg-gray-50 rounded-lg overflow-hidden">
+            <img src="/img/New.png" alt="new"
+              class="max-w-full max-h-full object-contain transition-transform duration-500 ease-out group-hover:scale-105" />
+          </div>
+
+          <div class="w-full text-center mt-4 px-2">
+            <h3
+              class="mt-4 text-sm text-gray-700">
+              New Balance 9060
+            </h3>
+            <p class="mt-1 text-base font-semibold text-gray-900">$35</p>
+
+            <button class="bg-[#C5A084] text-[#FAF6F0] font-sans text-xs font-bold tracking-[0.2em] uppercase px-8 py-4 rounded-none hover:bg-[#3A3330] hover:text-[#FAF6F0] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                    Comprar Agora</button>
+          </div>
+        </a>
+
+
+
+        
+        <a href="#"
+          class="group flex flex-col items-center justify-center p-4 bg-white rounded-xl shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-md max-w-sm mx-auto w-full">
+          <div
+            class="w-full aspect-square max-h-[280px] lg:max-h-[320px] flex items-center justify-center p-8 bg-gray-50 rounded-lg overflow-hidden">
+            <img src="/img/numeris1.png" alt="roseGel1"
+              class="max-w-full max-h-full object-contain transition-transform duration-500 ease-out group-hover:scale-105" />
+          </div>
+
+          <div class="w-full text-center mt-4 px-2">
+            <h3
+              class="mt-4 text-sm text-gray-700">
+               Numeris Atelier 
+            </h3>
+            <p class="mt-1 text-base font-semibold text-gray-900">$35</p>
+
+            <button class="bg-[#C5A084] text-[#FAF6F0] font-sans text-xs font-bold tracking-[0.2em] uppercase px-8 py-4 rounded-none hover:bg-[#3A3330] hover:text-[#FAF6F0] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                    Comprar Agora</button>
+          </div>
+        </a>
+
+
+
+        <a href="#"
+          class="group flex flex-col items-center justify-center p-4 bg-white rounded-xl shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-md max-w-sm mx-auto w-full">
+          <div
+            class="w-full aspect-square max-h-[280px] lg:max-h-[320px] flex items-center justify-center p-8 bg-gray-50 rounded-lg overflow-hidden">
+            <img src="/img/Asic3 (1).png" alt="asics"
+              class="max-w-full max-h-full object-contain transition-transform duration-500 ease-out group-hover:scale-105" />
+          </div>
+
+          <div class="w-full text-center mt-4 px-2">
+            <h3
+              class="mt-4 text-sm text-gray-700">
+              Asics Gel-NYC
+            </h3>
+            <p class="mt-1 text-base font-semibold text-gray-900">$35</p>
+
+            <button class="bg-[#C5A084] text-[#FAF6F0] font-sans text-xs font-bold tracking-[0.2em] uppercase px-8 py-4 rounded-none hover:bg-[#3A3330] hover:text-[#FAF6F0] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                    Comprar Agora</button>
+          </div>
+        </a>
+
+
+
+        <a href="#"
+          class="group flex flex-col items-center justify-center p-4 bg-white rounded-xl shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-md max-w-sm mx-auto w-full">
+          <div
+            class="w-full aspect-square max-h-[280px] lg:max-h-[320px] flex items-center justify-center p-8 bg-gray-50 rounded-lg overflow-hidden">
+            <img src="/img/Air1.png" alt="asics"
+              class="max-w-full max-h-full object-contain transition-transform duration-500 ease-out group-hover:scale-105" />
+          </div>
+
+          <div class="w-full text-center mt-4 px-2">
+            <h3
+              class="mt-4 text-sm text-gray-700">
+              Nike Air Max Plus 
+            </h3>
+            <p class="mt-1 text-base font-semibold text-gray-900">$35</p>
+
+            <button class="bg-[#C5A084] text-[#FAF6F0] font-sans text-xs font-bold tracking-[0.2em] uppercase px-8 py-4 rounded-none hover:bg-[#3A3330] hover:text-[#FAF6F0] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                    Comprar Agora</button>
+          </div>
+        </a>
+
+
+
+
+        <a href="#"
+          class="group flex flex-col items-center justify-center p-4 bg-white rounded-xl shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-md max-w-sm mx-auto w-full">
+          <div
+            class="w-full aspect-square max-h-[280px] lg:max-h-[320px] flex items-center justify-center p-8 bg-gray-50 rounded-lg overflow-hidden">
+            <img src="/img/jordan41.png" alt="asics"
+              class="max-w-full max-h-full object-contain transition-transform duration-500 ease-out group-hover:scale-105" />
+          </div>
+
+          <div class="w-full text-center mt-4 px-2">
+            <h3
+              class="mt-4 text-sm text-gray-700">
+              Air Jordan 14 Retro
+            </h3>
+            <p class="mt-1 text-base font-semibold text-gray-900">$35</p>
+
+            <button class="bg-[#C5A084] text-[#FAF6F0] font-sans text-xs font-bold tracking-[0.2em] uppercase px-8 py-4 rounded-none hover:bg-[#3A3330] hover:text-[#FAF6F0] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                    Comprar Agora</button>
+          </div>
+        </a>
+
+
+
+
+
+        <a href="#"
+          class="group flex flex-col items-center justify-center p-4 bg-white rounded-xl shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-md max-w-sm mx-auto w-full">
+          <div
+            class="w-full aspect-square max-h-[280px] lg:max-h-[320px] flex items-center justify-center p-8 bg-gray-50 rounded-lg overflow-hidden">
+            <img src="/img/airmax95.png" alt="asics"
+              class="max-w-full max-h-full object-contain transition-transform duration-500 ease-out group-hover:scale-105" />
+          </div>
+
+          <div class="w-full text-center mt-4 px-2">
+            <h3
+              class="mt-4 text-sm text-gray-700">
+              Air Max 95
+            </h3>
+            <p class="mt-1 text-base font-semibold text-gray-900">$35</p>
+
+            <button class="bg-[#C5A084] text-[#FAF6F0] font-sans text-xs font-bold tracking-[0.2em] uppercase px-8 py-4 rounded-none hover:bg-[#3A3330] hover:text-[#FAF6F0] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                    Comprar Agora</button>
+          </div>
+        </a>
+
+
+
+
+
+        <a href="#"
+          class="group flex flex-col items-center justify-center p-4 bg-white rounded-xl shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-md max-w-sm mx-auto w-full">
+          <div
+            class="w-full aspect-square max-h-[280px] lg:max-h-[320px] flex items-center justify-center p-8 bg-gray-50 rounded-lg overflow-hidden">
+            <img src="/img/airmax.png" alt="asics"
+              class="max-w-full max-h-full object-contain transition-transform duration-500 ease-out group-hover:scale-105" />
+          </div>
+
+          <div class="w-full text-center mt-4 px-2">
+            <h3
+              class="mt-4 text-sm text-gray-700">
+              Air Jordan 3 Retro
+            </h3>
+            <p class="mt-1 text-base font-semibold text-gray-900">$35</p>
+
+            <button class="bg-[#C5A084] text-[#FAF6F0] font-sans text-xs font-bold tracking-[0.2em] uppercase px-8 py-4 rounded-none hover:bg-[#3A3330] hover:text-[#FAF6F0] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                    Comprar Agora</button>
+          </div>
+        </a>
+
+
+
+
+
+
+        <a href="#"
+          class="group flex flex-col items-center justify-center p-4 bg-white rounded-xl shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-md max-w-sm mx-auto w-full">
+          <div
+            class="w-full aspect-square max-h-[280px] lg:max-h-[320px] flex items-center justify-center p-8 bg-gray-50 rounded-lg overflow-hidden">
+            <img src="/img/p300.png" alt="asics"
+              class="max-w-full max-h-full object-contain transition-transform duration-500 ease-out group-hover:scale-105" />
+          </div>
+
+          <div class="w-full text-center mt-4 px-2">
+            <h3
+              class="mt-4 text-sm text-gray-700">
+              Nike P-6000
+            </h3>
+            <p class="mt-1 text-base font-semibold text-gray-900">$35</p>
+
+            <button class="bg-[#C5A084] text-[#FAF6F0] font-sans text-xs font-bold tracking-[0.2em] uppercase px-8 py-4 rounded-none hover:bg-[#3A3330] hover:text-[#FAF6F0] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                    Comprar Agora</button>
+          </div>
+        </a>
+
+
+
+        <a href="#"
+          class="group flex flex-col items-center justify-center p-4 bg-white rounded-xl shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-md max-w-sm mx-auto w-full">
+          <div
+            class="w-full aspect-square max-h-[280px] lg:max-h-[320px] flex items-center justify-center p-8 bg-gray-50 rounded-lg overflow-hidden">
+            <img src="/img/STA.png" alt="asics"
+              class="max-w-full max-h-full object-contain transition-transform duration-500 ease-out group-hover:scale-105" />
+          </div>
+
+          <div class="w-full text-center mt-4 px-2">
+            <h3
+              class="mt-4 text-sm text-gray-700">
+              JJJJound x BAPE STA
+            </h3>
+            <p class="mt-1 text-base font-semibold text-gray-900">$35</p>
+
+            <button class="bg-[#C5A084] text-[#FAF6F0] font-sans text-xs font-bold tracking-[0.2em] uppercase px-8 py-4 rounded-none hover:bg-[#3A3330] hover:text-[#FAF6F0] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                    Comprar Agora</button>
+          </div>
+        </a>
+
+
+
+
+
+        <a href="#"
+          class="group flex flex-col items-center justify-center p-4 bg-white rounded-xl shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-md max-w-sm mx-auto w-full">
+          <div
+            class="w-full aspect-square max-h-[280px] lg:max-h-[320px] flex items-center justify-center p-8 bg-gray-50 rounded-lg overflow-hidden">
+            <img src="/img/vomero1.png" alt="asics"
+              class="max-w-full max-h-full object-contain transition-transform duration-500 ease-out group-hover:scale-105" />
+          </div>
+
+          <div class="w-full text-center mt-4 px-2">
+            <h3
+              class="mt-4 text-sm text-gray-700">
+             Nike Vomero 18
+            </h3>
+            <p class="mt-1 text-base font-semibold text-gray-900">$35</p>
+
+            <button class="bg-[#C5A084] text-[#FAF6F0] font-sans text-xs font-bold tracking-[0.2em] uppercase px-8 py-4 rounded-none hover:bg-[#3A3330] hover:text-[#FAF6F0] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                    Comprar Agora</button>
+          </div>
+        </a>
+    </div>
+  </div>
+  </div>
+
+
+
+
+<footer class="bg-[#3A3330] text-[#FAF6F0]">
+
+    <div class="max-w-7xl mx-auto px-6 py-12">
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+            <!-- LOGO / DESCRIÇÃO -->
+            <div class="text-center md:text-left">
+
+                <img
+                    src="/img/logoflekex.png"
+                    alt="FlekexStyle"
+                    class="w-28 mx-auto md:mx-0 mb-4">
+
+                
+
+            </div>
+
+
+            
+
+
+            <!-- REDES SOCIAIS -->
+            <div class="text-center md:text-right">
+
+                <h3
+                    class="text-sm font-semibold tracking-[0.2em]
+                    uppercase text-[#C5A084] mb-5">
+
+                    Siga-nos
+
+                </h3>
+
+                <div
+                    class="flex justify-center md:justify-end
+                    gap-4">
+
+                    <!-- Instagram -->
+                    <a
+                        href="#"
+                        class="w-10 h-10
+                        flex items-center justify-center
+                        border border-[#FAF6F0]/30
+                        hover:bg-[#C5A084]
+                        hover:border-[#C5A084]
+                        transition duration-300">
+
+                        <ion-icon
+                            name="logo-instagram"
+                            class="text-xl">
+                        </ion-icon>
+
+                    </a>
+
+
+                    <!-- WhatsApp -->
+                    <a
+                        href="#"
+                        class="w-10 h-10
+                        flex items-center justify-center
+                        border border-[#FAF6F0]/30
+                        hover:bg-[#C5A084]
+                        hover:border-[#C5A084]
+                        transition duration-300">
+
+                        <ion-icon
+                            name="logo-whatsapp"
+                            class="text-xl">
+                        </ion-icon>
+
+                    </a>
+
+
+                   
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- LINHA -->
+        <div
+            class="border-t
+            border-[#FAF6F0]/10
+            mt-10 pt-6">
+
+            <div
+                class="flex flex-col
+                md:flex-row
+                justify-between
+                items-center
+                gap-3">
+
+                <p class="text-xs text-[#FAF6F0]/50">
+
+                    © 2026 FlekexStyle.
+                    Todos os direitos reservados.
+
+                </p>
+
+                <div
+                    class="flex gap-6 text-xs
+                    text-[#FAF6F0]/50">
+
+                    <a
+                        href="#"
+                        class="hover:text-[#C5A084] transition">
+                        Privacidade
+                    </a>
+
+                    <a
+                        href="#"
+                        class="hover:text-[#C5A084] transition">
+                        Termos
+                    </a>
+
+                    <a
+                        href="#"
+                        class="hover:text-[#C5A084] transition">
+                        Contacto
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+  <script src="/index.js"></script>
+
+
+</body>
+
+</html>
